@@ -4,7 +4,7 @@ canvas {
 }
 
 body {
-    background-image: url("/image/зме.jpg");
+    background: "/image/зме.jpg";
 }
 
 .hide {
