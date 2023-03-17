@@ -16,7 +16,7 @@ let box = 32;
 
 let score = 0;
 
-let record = localStorage.getItem("record");
+let record = localStorage.getItem("record") ?? ;
 
 let food = {
     x: Math.floor((Math.random() * 17 + 1)) * box,
@@ -90,7 +90,7 @@ function drawGame() {
     ctx.fillText(score, box * 2.5, box * 1.7);
     ctx.fillStyle = "#f9b545";
     ctx.font = "25px Arial";
-    ctx.fillText("Рекорд: " + record ?? '0', box * 14, box * 1.7);
+    ctx.fillText("Рекорд: " + record, box * 14, box * 1.7);
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
