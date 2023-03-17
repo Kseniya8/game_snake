@@ -16,7 +16,7 @@ let box = 32;
 
 let score = 0;
 
-let record = localStorage.getItem("record") ?? ;
+let record = localStorage.getItem("record") ?? 0;
 
 let food = {
     x: Math.floor((Math.random() * 17 + 1)) * box,
